@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { variants } from "./layout";
 export default function Home() {
   return (
-    <main>
+    <>
       <motion.div
         variants={variants}
         initial={"hidden"}
@@ -12,8 +12,24 @@ export default function Home() {
         exit="exit"
         transition={{ type: "linear", delay: 0.5 }}
       >
-        Home Page here
+        <main className="flex flex-col items-center">
+          <div>Image here</div>{" "}
+          <motion.div
+            initial={{
+              x: -9999,
+            }}
+            animate={{
+              x: 0,
+            }}
+            mode="wait"
+          >
+            <p className="text-center">
+              Hello, my name is Jhon and I am a <br></br>{" "}
+              <b>Software Engineer.</b>
+            </p>
+          </motion.div>
+        </main>
       </motion.div>
-    </main>
+    </>
   );
 }
