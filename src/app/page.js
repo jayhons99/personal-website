@@ -7,9 +7,10 @@ export default function Home() {
     <main>
       <motion.div
         variants={variants}
+        initial={"hidden"}
         animate="enter"
         exit="exit"
-        transition={{ type: "linear", delay: 1 }}
+        transition={{ type: "linear", delay: 0.5 }}
       >
         Home Page here
       </motion.div>

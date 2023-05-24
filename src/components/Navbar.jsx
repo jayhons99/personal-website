@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import { Icon } from "@iconify/react";
 
 const Navbar = () => {
   return (
     <header className="flex flex-col justify-between items-center py-16">
       <Logo />
       <div className="flex justify-between gap-16 mt-8">
-        <nav className="flex justify-between gap-4">
+        <nav className="flex justify-between gap-6">
           <Link href="/skills" className="hover:underline">
             Skills
           </Link>
@@ -20,14 +21,14 @@ const Navbar = () => {
             target={"_blank"}
             className="hover:underline"
           >
-            LinkedIn
+            <Icon icon="simple-icons:linkedin" width={26} height={26} />
           </Link>
           <Link
             href="https://github.com/jayhons99"
             target={"_blank"}
             className="hover:underline"
           >
-            GitHub
+            <Icon icon="jam:github" width={26} height={26} />
           </Link>
         </nav>
       </div>
