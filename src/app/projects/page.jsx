@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { variants } from "../layout";
-import projects from "../../projects.js";
+import projectsList from "../../projects.js";
 import ProjectItem from "@/components/ProjectItem";
 
 const Page = () => {
@@ -16,7 +16,7 @@ const Page = () => {
         exit="exit"
         transition={{ type: "linear", delay: 0.5 }}
       >
-        {projects.map((item) => {
+        {projectsList.map((item) => {
           return <ProjectItem key={item.id} project={item} />;
         })}
       </motion.div>

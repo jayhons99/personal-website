@@ -1,4 +1,4 @@
-export default [
+const projectsList = [
   {
     id: 1,
     name: "ToDo List",
@@ -22,3 +22,5 @@ export default [
     completed: true,
   },
 ];
+
+export default projectsList;
