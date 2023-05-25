@@ -1,8 +1,6 @@
-"use client";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
-import { motion, AnimatePresence } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 export const variants = {
@@ -21,7 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} bg-primary`}>
         <Navbar />
-        <AnimatePresence mode="wait">{children}</AnimatePresence>
+        {children}
       </body>
     </html>
   );
