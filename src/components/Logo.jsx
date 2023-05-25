@@ -16,7 +16,7 @@ const Logo = () => {
     <div>
       <MotionLink
         href="/"
-        className={`${shareTechMono.className} flex items-center justify-center text-lg text-center bg-light h-14 w-14 rounded-md`}
+        className={`${shareTechMono.className} flex items-center justify-center text-lg text-center bg-light h-14 w-14 rounded-full`}
         whileHover={{
           scale: 1.5,
           transition: { duration: 1, repeat: Infinity },
