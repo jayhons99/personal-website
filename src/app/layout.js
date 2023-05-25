@@ -9,10 +9,10 @@ export const variants = {
   exit: { opacity: 0, x: 0, y: 0 },
 };
 
-export const metadata = {
-  title: "Personal Website",
-  description: "Created by Jhon Sisneros using Nextjs",
-};
+// export const metadata = {
+//   title: "Personal Website",
+//   description: "Created by Jhon Sisneros using Nextjs",
+// };
 
 export default function RootLayout({ children }) {
   return (
