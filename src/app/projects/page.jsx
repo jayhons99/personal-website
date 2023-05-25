@@ -1,10 +1,27 @@
 "use client";
-
 import { motion } from "framer-motion";
 import { variants } from "../layout";
+import ProjectItem from "@/components/ProjectItem";
+
+const projects = [
+  {
+    id: 1,
+    name: "ToDo List",
+    description:
+      "ToDo list application built on React.\nUses localStorage to persist data after refresh. Built to solidify core React hooks such as useState() and useEffect().",
+    skills: "React",
+    thumbnail: "",
+    sourceCode: "https://github.com/jayhons99/todo-app",
+    liveDemo:
+      "http://todo-list-bucket-jhon.s3-website-us-east-1.amazonaws.com/",
+    completed: true,
+  },
+];
 const Page = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center text-center">
+      <h1 className="font-bold text-[26px] mb-[16px]"># projects</h1>
+
       <motion.div
         variants={variants}
         initial="hidden"
@@ -12,7 +29,9 @@ const Page = () => {
         exit="exit"
         transition={{ type: "linear", delay: 0.5 }}
       >
-        Projects
+        {projects.map((item) => {
+          return <ProjectItem key={item.id} project={item} />;
+        })}
       </motion.div>
     </div>
   );

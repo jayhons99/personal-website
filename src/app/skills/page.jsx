@@ -5,7 +5,7 @@ import { variants } from "../layout";
 
 const Page = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center text-center">
       <motion.div
         variants={variants}
         initial="hidden"
@@ -13,7 +13,7 @@ const Page = () => {
         exit="exit"
         transition={{ type: "linear", delay: 0.5 }}
       >
-        Page
+        UNDER CONSTRUCTION
       </motion.div>
     </div>
   );
