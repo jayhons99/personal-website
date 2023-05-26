@@ -8,7 +8,6 @@ const Page = () => {
   return (
     <div className="flex flex-col justify-center items-center text-center">
       <h1 className="font-bold text-[26px] mb-[16px]"># projects</h1>
-
       <motion.div
         variants={variants}
         initial="hidden"
