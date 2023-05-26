@@ -28,18 +28,10 @@ const ProjectItem = ({ project }) => {
         {shown && <p>{description.split("\n")[1]}</p>}
         <p className="font-semibold">{skills}</p>
         <div className="flex gap-[8px]">
-          <Link
-            href={sourceCode}
-            className="bg-gray-100 hover:bg-gray-200 h-[1rem] w-[4rem] flex justify-center items-center text-[12px] rounded-md"
-            target="_blank"
-          >
+          <Link href={sourceCode} className="project-link" target="_blank">
             source
           </Link>
-          <Link
-            href={liveDemo}
-            className="bg-gray-100 hover:bg-gray-200 h-[1rem] w-[4rem] flex justify-center items-center text-[12px] rounded-md"
-            target="_blank"
-          >
+          <Link href={liveDemo} className="project-link" target="_blank">
             live
           </Link>
         </div>

@@ -30,7 +30,7 @@ export default function Home() {
           }}
           mode="wait"
         >
-          <div className="bg-light flex justify-center items-center h-[4rem] w-[20rem] rounded-lg">
+          <div className="home-card">
             <p className="text-center">
               Hello, my name is Jhon and I am a <br></br>{" "}
               <b>Software Engineer.</b>
@@ -54,7 +54,7 @@ export default function Home() {
             x: 1000,
           }}
         >
-          <div className="bg-light flex justify-center items-center h-[4rem] w-[20rem] rounded-lg">
+          <div className="home-card">
             <p className="text-center">
               I love to develop <b>simple</b> and <b>clean</b> responsive
               websites.

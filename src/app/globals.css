@@ -30,3 +30,13 @@
   font-family: var(--font-share-tech);
   font-weight: 400;
 }
+
+@layer components {
+  .project-link {
+    @apply bg-gray-100 hover:bg-gray-200 h-[1rem] w-[4rem] flex justify-center items-center text-[12px] rounded-md;
+  }
+
+  .home-card {
+    @apply bg-light flex justify-center items-center h-[4rem] w-[20rem] rounded-lg;
+  }
+}
