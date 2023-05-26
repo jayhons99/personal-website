@@ -14,9 +14,14 @@ const Page = () => {
         animate="enter"
         exit="exit"
         transition={{ type: "linear", delay: 0.5 }}
+        className="max-w-[80%] grid grid-rows-1 grid-flow-col overflow-x-auto snap-x snap-mandatory gap-4"
       >
         {projectsList.map((item) => {
-          return <ProjectItem key={item.id} project={item} />;
+          return (
+            <div key={item.id} className="snap-center">
+              <ProjectItem project={item} />
+            </div>
+          );
         })}
       </motion.div>
     </div>

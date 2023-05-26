@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 const ProjectItem = ({ project }) => {
   const [shown, setShown] = useState(false);
@@ -15,19 +16,35 @@ const ProjectItem = ({ project }) => {
   const firstLine = description.split("\n")[0];
 
   return (
-    <div className="flex flex-col justify-center items-center px-16 mb-8">
-      <div className="flex flex-col gap-[8px] justify-center items-start text-left bg-light rounded-lg text-[14px] p-[8px] w-[300px]">
-        <p className="text-lg">{name}</p>
-        <p>{firstLine}</p>
+    <div className="flex flex-col justify-center items-center px-0">
+      <div className={`card-layout ${shown && "pt-2"}`}>
+        <p className="text-xl pt-1 font-extrabold">{name}</p>
+
+        {thumbnail && (
+          <Image
+            src={thumbnail}
+            width={300}
+            height={300}
+            className="rounded-md"
+            alt="project-thumbnail"
+          ></Image>
+        )}
+        <p className="">{firstLine}</p>
         <p
           onClick={() => setShown((curr) => !curr)}
           className="underline hover:cursor-pointer"
         >
           {!shown ? "expand" : "hide"}
         </p>
-        {shown && <p>{description.split("\n")[1]}</p>}
-        <p className="font-semibold">{skills}</p>
-        <div className="flex gap-[8px]">
+        {shown && (
+          <p>
+            <i>{description.split("\n")[1]}</i>
+          </p>
+        )}
+        <p className={`font-semibold ${shown ? "mb-[8px]" : "mb-0"}`}>
+          {skills}
+        </p>
+        <div className={`flex gap-[8px] pb-[8px] ${shown && "pb-[12px]"}`}>
           <Link href={sourceCode} className="project-link" target="_blank">
             source
           </Link>
