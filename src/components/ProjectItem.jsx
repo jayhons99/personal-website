@@ -27,6 +27,9 @@ const ProjectItem = ({ project }) => {
             height={300}
             className="rounded-md"
             alt="project-thumbnail"
+            priority={
+              thumbnail === "/thumbnails/business-card.png" ? true : false
+            }
           ></Image>
         )}
         <p className="">{firstLine}</p>
