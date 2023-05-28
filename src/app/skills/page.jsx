@@ -1,7 +1,6 @@
 "use client";
 
 import { delay, motion } from "framer-motion";
-import { variants } from "../layout";
 import { techIcons } from "@/resources";
 import Image from "next/image";
 import Link from "next/link";

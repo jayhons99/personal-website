@@ -11,13 +11,18 @@ const Navbar = () => {
           <Link
             href="https://www.linkedin.com/in/jhon-sisneros/"
             target={"_blank"}
+            aria-label="Visit my LinkedIn page"
           >
             <Icon icon="simple-icons:linkedin" width={26} height={26} />
           </Link>
-          <Link href="https://github.com/jayhons99" target={"_blank"}>
+          <Link
+            href="https://github.com/jayhons99"
+            target={"_blank"}
+            aria-label="Visit my Github"
+          >
             <Icon icon="jam:github" width={26} height={26} />
           </Link>
-          <Link href="mailto: jhonrsisneros@gmail.com">
+          <Link href="mailto: jhonrsisneros@gmail.com" aria-label="Email me">
             <Icon icon="ic:baseline-email" width={26} height={26}></Icon>
           </Link>
         </nav>
