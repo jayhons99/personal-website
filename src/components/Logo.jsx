@@ -11,9 +11,11 @@ const shareTechMono = Share_Tech_Mono({
 const Logo = () => {
   return (
     <div
-      className={`${shareTechMono.className} flex items-center justify-center text-lg text-center bg-light h-14 w-14 rounded-full transition hover:-translate-y-2 hover:cursor-pointer duration-300`}
+      className={`${shareTechMono.className} flex items-center justify-center text-lg text-center bg-light h-14 w-14 rounded-full transition hover:-translate-y-2 hover:cursor-pointer duration-300 dark:bg-dark`}
     >
-      <Link href="/">Jhon Sisneros</Link>
+      <Link href="/" className="dark:text-textDark">
+        Jhon Sisneros
+      </Link>
     </div>
   );
 };

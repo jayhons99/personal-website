@@ -33,15 +33,15 @@
 
 @layer components {
   .project-link {
-    @apply bg-gray-100 hover:bg-gray-200 h-[1rem] w-[4rem] flex justify-center items-center text-[12px] rounded-md;
+    @apply bg-gray-100 hover:bg-gray-200 h-[1rem] w-[4rem] flex justify-center items-center text-[12px] rounded-md dark:text-black;
   }
 
   .home-card {
-    @apply bg-light flex justify-center items-center h-[4rem] w-[20rem] rounded-lg md:text-xl md:h-[6rem] md:w-[22rem];
+    @apply bg-light dark:bg-dark flex justify-center items-center h-[4rem] w-[20rem] rounded-lg md:text-xl md:h-[6rem] md:w-[22rem];
   }
 
   .card-layout {
-    @apply flex flex-col justify-around gap-2 items-start text-left bg-light rounded-lg text-[14px] px-4 min-h-[250px] min-w-[200px];
+    @apply flex flex-col justify-around gap-2 items-start text-left bg-light dark:bg-dark rounded-lg text-[14px] px-4 min-h-[250px] min-w-[200px];
   }
 
   .card-layout-lg {

@@ -9,9 +9,9 @@ import PageWrapper from "@/components/PageWrapper";
 const Page = () => {
   return (
     <PageWrapper>
-      <div className="flex flex-col justify-center items-center text-center">
+      <div className="flex flex-col justify-center items-center text-center dark:text-textDark">
         <h1 className="heading"># skills</h1>
-        <div className="bg-light rounded-lg p-4 mb-2">
+        <div className="bg-light rounded-lg p-4 mb-2 dark:bg-dark">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

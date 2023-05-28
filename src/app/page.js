@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <PageWrapper>
-        <main className="flex flex-col items-center">
+        <main className="flex flex-col items-center dark:text-textDark">
           <Image
             src="/cropped.jpg"
             alt="picture of me"

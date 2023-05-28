@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { Icon } from "@iconify/react";
+import ToggleTheme from "./ToggleTheme";
 
 const Navbar = () => {
   return (
     <header className="flex flex-col justify-center items-center pt-16 pb-8">
       <Logo />
-      <div className="flex flex-col justify-between gap-[16px] mt-8">
+      <div className="flex flex-col justify-between gap-[16px] mt-8 dark:text-textDark">
         <nav className="flex justify-center gap-[16px]">
           <Link
             href="https://www.linkedin.com/in/jhon-sisneros/"
