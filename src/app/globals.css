@@ -47,4 +47,8 @@
   .card-layout-lg {
     @apply min-h-[400px] max-w-[400px];
   }
+
+  .heading {
+    @apply font-bold text-[26px] mb-[16px];
+  }
 }

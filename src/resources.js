@@ -24,4 +24,51 @@ const projectsList = [
   },
 ];
 
-export default projectsList;
+const techIcons = [
+  {
+    path: "/assets/aws.svg",
+    link: "https://aws.amazon.com/",
+  },
+  {
+    path: "/assets/git.svg",
+    link: "https://git-scm.com/",
+  },
+  {
+    path: "/assets/html5.svg",
+    link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+  },
+  {
+    path: "/assets/java.svg",
+    link: "https://www.java.com/en/",
+  },
+  {
+    path: "/assets/js.svg",
+    link: "https://www.javascript.com/",
+  },
+  {
+    path: "/assets/nextjs.svg",
+    link: "https://nextjs.org/",
+  },
+  {
+    path: "/assets/nodejs.svg",
+    link: "https://nodejs.org/en",
+  },
+  {
+    path: "/assets/reactjs.svg",
+    link: "https://react.dev/",
+  },
+  {
+    path: "/assets/spring.svg",
+    link: "https://spring.io/projects/spring-boot",
+  },
+  {
+    path: "/assets/tailwind.svg",
+    link: "https://tailwindcss.com/",
+  },
+  {
+    path: "/assets/mysql.svg",
+    link: "https://www.mysql.com/",
+  },
+];
+
+export { projectsList, techIcons };
