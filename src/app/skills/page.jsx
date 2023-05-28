@@ -11,7 +11,7 @@ const Page = () => {
     <PageWrapper>
       <div className="flex flex-col justify-center items-center text-center">
         <h1 className="heading"># skills</h1>
-        <div className="bg-light rounded-lg p-4 mb-8">
+        <div className="bg-light rounded-lg p-4 mb-2">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
