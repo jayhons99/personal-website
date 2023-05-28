@@ -14,7 +14,7 @@ const Page = () => {
         animate="enter"
         exit="exit"
         transition={{ type: "linear", delay: 0.5 }}
-        className="max-w-[80%] grid grid-rows-1 grid-flow-col overflow-x-auto snap-x snap-mandatory gap-4"
+        className="max-w-[80%] grid grid-rows-1 grid-flow-col overflow-x-auto snap-x snap-mandatory gap-4 md:grid-flow-col"
       >
         {projectsList.map((item) => {
           return (

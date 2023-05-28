@@ -1,9 +1,6 @@
 "use client";
 import { Share_Tech_Mono } from "next/font/google";
-import { motion } from "framer-motion";
 import Link from "next/link";
-
-const MotionLink = motion(Link);
 
 const shareTechMono = Share_Tech_Mono({
   subsets: ["latin"],
@@ -13,20 +10,10 @@ const shareTechMono = Share_Tech_Mono({
 
 const Logo = () => {
   return (
-    <div>
-      <MotionLink
-        href="/"
-        className={`${shareTechMono.className} flex items-center justify-center text-lg text-center bg-light h-14 w-14 rounded-full`}
-        whileHover={{
-          scale: 1.5,
-          transition: { duration: 1, repeat: Infinity },
-        }}
-        whileTap={{
-          y: -10,
-        }}
-      >
-        Jhon Sisneros
-      </MotionLink>
+    <div
+      className={`${shareTechMono.className} flex items-center justify-center text-lg text-center bg-light h-14 w-14 rounded-full transition hover:-translate-y-2 hover:cursor-pointer duration-300`}
+    >
+      <Link href="/">Jhon Sisneros</Link>
     </div>
   );
 };

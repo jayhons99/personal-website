@@ -17,7 +17,7 @@ const ProjectItem = ({ project }) => {
 
   return (
     <div className="flex flex-col justify-center items-center px-0">
-      <div className={`card-layout ${shown && "pt-2"}`}>
+      <div className={`card-layout ${shown && "pt-2"} md:card-layout-lg`}>
         <p className="text-xl pt-1 font-extrabold">{name}</p>
 
         {thumbnail && (
@@ -37,7 +37,7 @@ const ProjectItem = ({ project }) => {
           {!shown ? "expand" : "hide"}
         </p>
         {shown && (
-          <p>
+          <p className="">
             <i>{description.split("\n")[1]}</i>
           </p>
         )}

@@ -9,7 +9,7 @@ export default function Home() {
       <main className="flex flex-col items-center">
         <Image
           src="/cropped.jpg"
-          alt="picture of Jhon"
+          alt="picture of me"
           width={150}
           height={150}
           className="rounded-full mb-[16px] mt-0"
