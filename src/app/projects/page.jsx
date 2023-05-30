@@ -9,27 +9,29 @@ const Page = () => {
     <PageWrapper>
       <div className="flex flex-col justify-center items-center text-center dark:text-textDark">
         <h1 className="heading"># projects</h1>
-        {projectsList.map((item, i) => {
-          return (
-            <motion.div
-              key={item.id}
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-              }}
-              transition={{
-                duration: 0.3,
-                delay: i * 0.3,
-              }}
-            >
-              <div className="mb-8">
-                <ProjectItem project={item} />
-              </div>
-            </motion.div>
-          );
-        })}
+        <div className="project-layout-lg">
+          {projectsList.map((item, i) => {
+            return (
+              <motion.div
+                key={item.id}
+                initial={{
+                  opacity: 0,
+                }}
+                animate={{
+                  opacity: 1,
+                }}
+                transition={{
+                  duration: 0.3,
+                  delay: i * 0.3,
+                }}
+              >
+                <div className="mb-8">
+                  <ProjectItem project={item} />
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </PageWrapper>
   );
