@@ -1,60 +1,37 @@
 import Link from "next/link";
-import { useState } from "react";
 import Image from "next/image";
 
 const ProjectItem = ({ project }) => {
-  const [shown, setShown] = useState(false);
-  const {
-    name,
-    description,
-    skills,
-    thumbnail,
-    sourceCode,
-    liveDemo,
-    completed,
-  } = project;
-  const firstLine = description.split("\n")[0];
+  const { name, description, skills, thumbnail, sourceCode, liveDemo } =
+    project;
 
   return (
-    <div className="flex flex-col justify-center items-center px-0">
-      <div className={`card-layout ${shown && "pt-2"} md:card-layout-lg`}>
-        <p className="text-xl pt-1 font-extrabold">{name}</p>
-
-        {thumbnail && (
-          <Image
-            src={thumbnail}
-            width={300}
-            height={300}
-            className="rounded-md"
-            alt="project-thumbnail"
-            priority={
-              thumbnail === "/thumbnails/business-card.png" ? true : false
-            }
-          ></Image>
-        )}
-        <p className="">{firstLine}</p>
-        <p
-          onClick={() => setShown((curr) => !curr)}
-          className="underline hover:cursor-pointer"
-        >
-          {!shown ? "expand" : "hide"}
-        </p>
-        {shown && (
-          <p className="">
-            <i>{description.split("\n")[1]}</i>
-          </p>
-        )}
-        <p className={`font-semibold ${shown ? "mb-[8px]" : "mb-0"}`}>
-          {skills}
-        </p>
-        <div className={`flex gap-[8px] pb-[8px] ${shown && "pb-[12px]"}`}>
-          <Link href={sourceCode} className="project-link" target="_blank">
+    <div className="flex flex-col justify-center items-center px-0 gap-4">
+      <Image
+        src={thumbnail}
+        width={250}
+        height={250}
+        alt="project thumbnail"
+        className="rounded-xl"
+      />
+      <p className="text-xl font-semibold">{name}</p>
+      <p className="text-sm">{description}</p>
+      <i className="text-sm font-semibold">{skills}</i>
+      <div className="flex justify-around gap-4">
+        <span className="project-link">
+          <Link
+            href={sourceCode}
+            aria-label="Go to project repository"
+            target="_blank"
+          >
             source
           </Link>
-          <Link href={liveDemo} className="project-link" target="_blank">
+        </span>
+        <span className="project-link">
+          <Link href={liveDemo} aria-label="Go to project demo" target="_blank">
             live
           </Link>
-        </div>
+        </span>
       </div>
     </div>
   );

@@ -1,9 +1,8 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { Icon } from "@iconify/react";
-import ToggleTheme from "./ToggleTheme";
 
-const Navbar = () => {
+const Navbar = ({ links }) => {
   return (
     <header className="flex flex-col justify-center items-center pt-16 pb-8">
       <Logo />
@@ -28,15 +27,18 @@ const Navbar = () => {
           </Link>
         </nav>
         <nav className="flex justify-between gap-[48px]">
-          <Link href="/skills" className="hover:underline">
-            # skills
-          </Link>
-          <Link href="/projects" className="hover:underline">
-            # projects
-          </Link>
-          <Link href="/experience" className="hover:underline">
-            # experience
-          </Link>
+          {links.map((link) => {
+            return (
+              <Link
+                key={link}
+                href={link}
+                className="hover:underline"
+                aria-label="Navigation link"
+              >
+                {link.replace("/", "# ")}
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </header>

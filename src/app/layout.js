@@ -8,6 +8,7 @@ import ToggleTheme from "@/components/ToggleTheme";
 import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
+const paths = ["/projects", "/skills", "/experience"];
 
 export default function RootLayout({ children }) {
   const [isDark, setIsDark] = useState(false);
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
     setIsDark((prev) => !prev);
   }
   return (
-    <html lang="en" className={isDark && "dark"}>
+    <html lang="en" className={isDark ? "dark" : ""}>
       <head>
         <title>Personal Website</title>
         <meta charSet="UTF-8" />
@@ -30,7 +31,7 @@ export default function RootLayout({ children }) {
         className={`${inter.className} h-screen bg-primary dark:bg-primaryDark`}
       >
         <ToggleTheme toggleTheme={toggleTheme} isDark={isDark} />
-        <Navbar />
+        <Navbar links={paths} />
         {children}
         <Footer />
       </body>

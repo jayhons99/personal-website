@@ -2,8 +2,7 @@ const projectsList = [
   {
     id: 1,
     name: "ToDo List",
-    description:
-      "ToDo list application built on React.\nUses localStorage to persist data after refresh. Built to solidify core React hooks such as useState() and useEffect().",
+    description: "ToDo list application built on React.",
     skills: "React",
     thumbnail: "/thumbnails/todo-list-thumb.png",
     sourceCode: "https://github.com/jayhons99/todo-app",
@@ -14,8 +13,7 @@ const projectsList = [
   {
     id: 2,
     name: "Business Card",
-    description:
-      "Business card demonstrating core AWS services.\nStatic website that uses Amazon S3 and CloudFront and utilized Route 53 to generate a domain name. Also calls a Lambda function via an API Gateway on refresh to update and fetch from a DynamoDB table.",
+    description: "Business card demonstrating core AWS services.",
     skills: "AWS, React",
     thumbnail: "/thumbnails/business-card.png",
     sourceCode: "https://github.com/jayhons99/business-card",
