@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { easeIn, easeInOut, motion } from "framer-motion";
 import { techIcons } from "@/resources";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,7 +26,7 @@ const Page = () => {
                   key={icon.path}
                   initial={{
                     opacity: 0,
-                    translateY: i % 2 === 0 ? -50 : 50,
+                    translateY: -50,
                   }}
                   animate={{
                     opacity: 1,
