@@ -20,6 +20,14 @@ const projectsList = [
     liveDemo: "https://www.jhonresumesite.com/",
     completed: true,
   },
+  {
+    id: 3,
+    name: "Shopaholic",
+    description: "Ecommerce site with cart and checkout functionality.",
+    skills: "React, React Context, Stripe",
+    sourceCode: "https://github.com/jayhons99/ecommerce-demo",
+    completed: false,
+  },
 ];
 
 const techIcons = [
