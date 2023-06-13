@@ -26,6 +26,7 @@ const projectsList = [
     description: "Ecommerce site with cart and checkout functionality.",
     skills: "React, React Context, Stripe",
     sourceCode: "https://github.com/jayhons99/ecommerce-demo",
+    liveDemo: "https://main.d3klsfakt69u7r.amplifyapp.com/",
     completed: false,
   },
 ];

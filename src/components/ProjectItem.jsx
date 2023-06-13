@@ -40,7 +40,7 @@ const ProjectItem = ({ project }) => {
             source
           </Link>
         </span>
-        {completed && (
+        {liveDemo && (
           <span className="project-link">
             <Link
               href={liveDemo}
