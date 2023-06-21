@@ -37,7 +37,7 @@
   }
 
   .home-card {
-    @apply bg-light dark:bg-dark flex justify-center items-center h-[4rem] w-[20rem] rounded-lg md:text-xl md:h-[6rem] md:w-[22rem];
+    @apply bg-light dark:bg-dark flex justify-center items-center h-[4rem] w-[20rem] rounded-lg;
   }
 
   .card-layout-lg {

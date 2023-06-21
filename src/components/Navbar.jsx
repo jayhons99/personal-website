@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 
 const Navbar = ({ links }) => {
   return (
-    <header className="flex flex-col justify-center items-center pt-16 pb-8">
+    <header className="flex flex-col mb-8 justify-center items-center">
       <Logo />
       <div className="flex flex-col justify-between gap-[16px] mt-8 dark:text-textDark">
         <nav className="flex justify-center gap-[16px]">
