@@ -24,10 +24,11 @@ const projectsList = [
     id: 3,
     name: "Shopaholic",
     description: "Ecommerce site with cart and checkout functionality.",
-    skills: "React, React Context, Stripe",
+    skills: "React, React Context, Stripe, AWS",
     sourceCode: "https://github.com/jayhons99/ecommerce-demo",
+    thumbnail: "/thumbnails/shopaholic.png",
     liveDemo: "https://main.d3klsfakt69u7r.amplifyapp.com/",
-    completed: false,
+    completed: true,
   },
 ];
 
